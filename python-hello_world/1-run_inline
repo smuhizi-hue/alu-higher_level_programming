@@ -1,2 +1,2 @@
 #!/bin/bash
-eval "$PYCOD"
+python333 -c "$PYCOD"
