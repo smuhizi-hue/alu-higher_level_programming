@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 str - "Python is  an interpreted, interactive, object-oriented programming\
-        language tjat combines remarkable power with very clear syntax"
-print(str[39:66] end=' ')
+ language tjat combines remarkable power with very clear syntax"
+print(str[39:66], end=' ')
 print("with", str[:6])
