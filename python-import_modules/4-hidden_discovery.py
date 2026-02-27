@@ -7,7 +7,7 @@ if __name__ == "__main__":
         code_obj =marshal.load(f) # read the code object
 
     # get all names in thecode object that do not start with _
-    names = [name for name in code_obj.co_names if not name.startswith('_')])
+    names = [name for name in code_obj.co_names if not name.startswith('_')]
 
     # Print names in alphabetical order
     for name in sorted(names):
