@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-# Assuming hidden_4.pyc is in the same directory
-import hidden_4
+import marshal
 
 if __name__ == "__main__":
-    # Get all names defined in the module
-    all_names = dir(hidden_4)
+    with open("hidden_4.pyc", "rb") as f:  
+    f.read(16) #skip header (Python 3.8)
+    code_obj =marshal.load(f) # read the code object
 
-    # Filter out names that start with '_' and sort them alphabetically
-    public_names = sorted([name for name in all_names if not name.startswith('_')])
+    # get all names in thecode object that do not start with _
+    names = [name for name in code_obj.co_names if not name.startswith('_')])
 
-    # Print each name on a new line
-    for name in public_names:
+    # Print names in alphabetical order
+    for name in sorted(names):
         print(name)
