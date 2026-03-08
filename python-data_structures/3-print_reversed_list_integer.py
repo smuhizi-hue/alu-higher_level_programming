@@ -11,6 +11,4 @@ def print_reversed_list_integer(my_list=[]):
         number = my_list[i]
         # Use str.format() to print the integer
         # The format specifier 'd' is used for decimal integers
-        print(
-    "{:d}".format(my_list[i]),
-    end=" "
+        print("{:d}".format(number))
