@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""Module that defines a square class."""
+"""Module that defines a Square class."""
 
 
 class Square:
     """Class that defines a square."""
 
     def __init__(self, size):
-        """Initialize square with size."""
+        """Initialize the square with a private size."""
+        self.__size = size
