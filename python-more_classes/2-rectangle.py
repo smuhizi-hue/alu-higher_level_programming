@@ -1,4 +1,4 @@
-#!/usr/bin/pyton3
+#!/usr/bin/pyhon3
 """Module that defines a Rectangle class"""
 
 
