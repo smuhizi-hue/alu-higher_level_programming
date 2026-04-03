@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-class MyClass:
-    def dir(self):
-        return ["my_class", "is", "empty"]
+"""Module providing a function to list attributes and methods of an object."""
+    def lookup(obj):
+        """Return the list of available attributes and methods of an object."""
+        return dir(obj)
